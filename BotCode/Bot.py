@@ -5,11 +5,12 @@ from pinecone import Pinecone
 import os
 from flask import Flask, request, jsonify 
 from flask_cors import CORS
+from supabase import create_client
 
-
-#app = Flask(__name__,template_folder="templates")
-#CORS(app)
-
+url = os.getenv("SUPABASE_URL")
+key = os.getenv("SUPABASE_SERVICE_KEY")
+supabase = create_client(url,key)
+    
 client = OpenAI(api_key = os.getenv("OPENAI_API_KEY"))
 pc = Pinecone(api_key= os.getenv("PINECONE_API_KEY"))
 index = pc.Index("docs")
@@ -38,6 +39,7 @@ def generate_text(question):
             {"role": "user", "content": f"Context: {context}\n\nQuestion: {question}"}
         ]
     )
+
 
     return(completion.choices[0].message.content)
 
