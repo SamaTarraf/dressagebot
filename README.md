@@ -4,34 +4,34 @@ A full-stack web-app with a React frontend, a Python (Flask)backend, RAG, and JW
 
 ***Features***
 
-  Account 
+  -Account 
   
-  User authentication with JWT
+  -User authentication with JWT
   
-  Chat history storage
+  -Chat history storage
   
-  RAG using Pinecone
+  -RAG using Pinecone
   
 
 ***Running the web-app***
 
-  Run the backend: 'python server.py'
+  -Run the backend: 'python server.py'
   
-  Run frontend from web-app folder: 'npm run dev'
+  -Run frontend from web-app folder: 'npm run dev'
   
 
 ***Required Environmental Variables***
 
-  SUPABASE_URL
+  -SUPABASE_URL
   
-  SUPABASE_SERVICE_KEY
+  -SUPABASE_SERVICE_KEY
   
-  PINECONE_API_KEY
+  -PINECONE_API_KEY
   
-  OPENAI_API_KEY
+  -OPENAI_API_KEY
   
-  REFRESH_KEY
+  -REFRESH_KEY
   
-  ACCESS_KEY
+  -ACCESS_KEY
 
 REFRESH_KEY and ACCESS_KEY are used for jwt tokens
