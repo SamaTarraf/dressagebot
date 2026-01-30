@@ -1,7 +1,23 @@
-Start Server with python: server.py
+***Dressage Chatbot***
+A full-stack web-app with a React frontend, a Python (Flask)backend, RAG, and JWT authentication where users can chat with an AI chatbot about horse riding and dressage.
 
-From inside web-app folder run website with: npm run dev
+***Features***
+  Account creation
+  User authentication with JWT
+  Chat history storage
+  RAG using Pinecone
 
-will require environmental variables of SUPABASE_URL, SUPABASE_SERVICE_KEY, PINECONE_API_KEY, OPENAI_API_KEY, REFRESH_KEY, and ACCESS_KEY
+***Running the web-app***
 
-REFRESH_KEY and ACCESS_KEY are for jwt tokens
+  Run the backend: 'python server.py'
+  Run frontend from web-app folder: 'npm run dev'
+
+***Required Environmental Variables***
+  SUPABASE_URL
+  SUPABASE_SERVICE_KEY
+  PINECONE_API_KEY
+  OPENAI_API_KEY
+  REFRESH_KEY
+  ACCESS_KEY
+
+REFRESH_KEY and ACCESS_KEY are used for jwt tokens
