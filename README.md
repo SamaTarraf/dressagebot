@@ -6,7 +6,7 @@ A full-stack web-app with a React frontend, a Python (Flask)backend, RAG, and JW
 
 ***Features***
 
-      -Account 
+      -Account Creation
   
       -User authentication with JWT
   
