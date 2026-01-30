@@ -1,4 +1,5 @@
 ***Dressage Chatbot***
+
 A full-stack web-app with a React frontend, a Python (Flask)backend, RAG, and JWT authentication where users can chat with an AI chatbot about horse riding and dressage.
 
 ***Features***
